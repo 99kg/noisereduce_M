@@ -1,0 +1,17 @@
+# local package
+-e .
+
+matplotlib
+numpy
+scipy
+tqdm
+torch
+joblib
+
+
+# for testing
+coverage
+pytest>=3.6
+pytest-ordering
+pytest-cov
+python-coveralls

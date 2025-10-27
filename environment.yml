@@ -1,0 +1,13 @@
+name: noisereduce
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.6
+  - notebook>5.2
+  - scipy
+  - matplotlib
+  - numpy
+  - tqdm
+  - pip:
+     - noisereduce
