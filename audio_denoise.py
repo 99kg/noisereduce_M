@@ -177,7 +177,7 @@ def main():
         if args.test_noise:
             output_path = output_dir / f"noise_sample_{input_path.name}"
         else:
-            output_path = output_dir / f"cleaned_{input_path.name}"
+            output_path = output_dir / f"{input_path.name}"
         
         print(f"处理文件: {input_path.name}")
         print(f"噪声位置: {args.noise_position}")
@@ -235,7 +235,7 @@ def main():
             if args.test_noise:
                 output_filename = f"noise_sample_{file.name}"
             else:
-                output_filename = f"cleaned_{file.name}"
+                output_filename = f"{file.name}"
             
             output_path = output_dir / file.relative_to(input_dir).parent / output_filename
             output_path.parent.mkdir(parents=True, exist_ok=True)
